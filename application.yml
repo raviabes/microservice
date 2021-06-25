@@ -16,3 +16,10 @@ payment-service:
       endpoints:
         endpoint:
           uri:http://ORDER_SERVICE/payment/doPayment
+          cloud:
+config:
+      server:
+        composite:
+          - type: native
+            search-locations: ${HOME}/Desktop/config
+        bootstrap: true
