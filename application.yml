@@ -16,10 +16,4 @@ microservice:
       endpoints:
         endpoint:
           uri:http://ORDER_SERVICE/payment/bookOrder
-          cloud:
-config:
-      server:
-        composite:
-          - type: native
-            search-locations: ${HOME}/Desktop/config
-        bootstrap: true
+         
